@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill out this survey to help us improve our service.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Enter your age" min="18" max="120" required>
+
+        <label for="dropdown">Which country do you live in?</label>
+        <select id="dropdown" required>
+          <option disabled selected value="">Select an option</option>
+          <option value="USA">USA</option>
+          <option value="Canada">Canada</option>
+          <option value="Mexico">Mexico</option>
+        </select>
+
+        <fieldset>
+          <legend>What is your favorite color?</legend>
+          <label>
+            <input type="radio" name="color" value="blue" required>
+            Blue
+          </label>
+          <label>
+            <input type="radio" name="color" value="red" required>
+            Red
+          </label>
+          <label>
+            <input type="radio" name="color" value="green" required>
+            Green
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Which of the following sports have you played in the last year?</legend>
+          <label>
+            <input type="checkbox" name="sports" value="soccer">
+            Soccer
+          </label>
+          <label>
+            <input type="checkbox" name="sports" value="basketball">
+            Basketball
+          </label>
+          <label>
+            <input type="checkbox" name="sports" value="tennis">
+            Tennis
+          </label>
+          <label>
+            <input type="checkbox" name="sports" value="swimming">
+            Swimming
+          </label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" rows="5"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+/* Set the height of the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the height of the welcome section to equal the height of the viewport */
+.welcome {
+  height: 100vh;
+}
+
+/* Always keep the navbar at the top of the viewport */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 80px;
+}
+
+.navbar-nav a {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px;
+  line-height: 80px;
+  color: #fff;
+}
+
+.navbar-nav .active {
+  background-color: #6c757d;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+/* Style the headings in the sections */
+.section h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Style the content in the sections */
+.section p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style all list items */
+li {
+  margin-bottom: 10px;
+}
+
+/* Style all ordered and unordered lists */
+ol, ul {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+/* Style list item bullets/numbers */
+li:before {
+  content: ""; /* Use a bullet point for unordered lists */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+/* Style all images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the header element */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .navbar-nav a {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 60px;
+  }
+  
+  .section h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
